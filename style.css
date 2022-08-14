@@ -1,0 +1,77 @@
+body{
+    background-color: burlywood;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.main-container{
+    width: 80%;;
+    background-color: lightblue;
+    height: auto;
+    margin: 10%;
+}
+.screen-container{
+    background-color: lightgray;
+    width: 98%;
+    margin: 1%;
+    height: 50px;
+    text-align: right;
+}
+.text-container{
+    opacity: .3;
+    font-size: 2em;
+}
+.keys-container{
+    background-color: lightgreen;
+    display:flex;
+    width: 96%;
+    margin: 2%;
+}
+#key-number-1 { grid-area: key1;}
+#key-number-2 { grid-area: key2;}
+#key-number-3 { grid-area: key3;}
+#key-number-4 { grid-area: key4;}
+#key-number-5 { grid-area: key5;}
+#key-number-6 { grid-area: key6;}
+#key-number-7 { grid-area: key7;}
+#key-number-8 { grid-area: key8;}
+#key-number-9 { grid-area: key9;}
+#key-number-0 { grid-area: key0;}
+#key-number-dot { grid-area: keyd;}
+.key-numbers-container{
+    width: 80%;
+    display: grid;
+    grid-template:  'key1 key2 key3' 
+                    'key4 key5 key6'
+                    'key7 key8 key9' 
+                    'key0 key0 keyd';
+}
+.key-number{
+    background-color: lightseagreen;
+    margin: 2px;
+    text-align: center;
+    border: solid 1px black;
+    box-shadow: 1px 2px rgb(44, 44, 44);
+    min-height: 30px;
+}
+#key-action-plus { grid-area: keyplus;}
+#key-action-minus { grid-area: keyminus;}
+#key-action-multiply { grid-area: keymultiply;}
+#key-action-divide { grid-area: keydivide;}
+#key-action-equal { grid-area: keyequal;}
+.key-actions-container{
+    width: 20%;
+    display: grid;
+    grid-template:  'keyplus'
+                    'keyminus'
+                    'keymultiply'
+                    'keydivide'
+                    'keyequal';
+}
+.key-action{
+    background-color: lightsalmon;
+    margin: 2px;
+    text-align: center;
+    border: solid 1px black;
+    box-shadow: 1px 2px rgb(44, 44, 44);
+    min-height: 30px;
+}
